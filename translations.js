@@ -41,7 +41,7 @@ const translations = {
 
         // Bento Display Area
         "itoms-title": "Built for Dynamic Tour Operators",
-        "itoms-desc": "Our primary ERP suite automates booking requests, client manifest handling, hotel/cruise allotments, and field guide distributions within one single application ecosystem.",
+        "itoms-desc": "Our AI-supported ERP suite automates booking requests, client manifest handling, hotel/cruise allotments, and field guide distributions within one unified application ecosystem.",
         "itoms-btn": "Explore ITOMS Platform",
         "itoms-sub-1": "Modular Architecture",
         "itoms-sub-1-desc": "Deploy only the modules your operation needs. Scale effortlessly as you grow.",
@@ -133,7 +133,7 @@ const translations = {
 
         // Bento Display Area
         "itoms-title": "مُصمم لمنظمي الرحلات الديناميكية",
-        "itoms-desc": "يقوم نظام إدارة الموارد الأساسي (ERP) لدينا بأتمتة طلبات الحجز، ومعالجة كشوفات العملاء، وحصص الفنادق/الرحلات البحريّة، وتوزيعات المرشدين الميدانيين ضمن بيئة تطبيق موحدة.",
+        "itoms-desc": "يقوم نظام إدارة الموارد الأساسي (ERP) المدعوم بالذكاء الاصطناعي لدينا بأتمتة طلبات الحجز، ومعالجة كشوفات العملاء، وحصص الفنادق/الرحلات البحريّة، وتوزيعات المرشدين الميدانيين ضمن بيئة تطبيق موحدة.",
         "itoms-btn": "استكشف منصة ITOMS",
         "itoms-sub-1": "بنية معيارية",
         "itoms-sub-1-desc": "قم بنشر الوحدات التي يحتاجها عملك فقط. قم بالتوسع بسهولة مع نمو عملك.",

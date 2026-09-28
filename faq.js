@@ -205,6 +205,8 @@ document.addEventListener('DOMContentLoaded', () => {
         "faq-i5-a": "ITOMS covers the full spectrum of inbound tour operations, including booking & reservation management, allotment control, traffic department management, accounts payable and receivable, planning, costing and pricing, management reports, and client manifest generation.",
         "faq-i6-q": "Can ITOMS exchange data with other reservation systems?",
         "faq-i6-a": "Yes. ITOMS is developed in standard travel industry format, enabling exchange of information with other reservation systems. It also supports direct Web API integrations for supplier connectivity and real-time data sync.",
+        "faq-i7-q": "Does ITOMS support artificial intelligence?",
+        "faq-i7-a": "Yes. ITOMS supports AI-assisted capabilities that help teams work with operational data, improve analysis, and make more informed decisions within their travel-management workflows.",
         // FAQ — Archiving
         "faq-a1-q": "What is the TSE Archiving System?",
         "faq-a1-a": "The TSE Archiving System is a digital document management solution fully integrated with ITOMS. It eliminates physical filing by letting staff drag-and-drop emails, scan faxes, and attach documents directly to agencies, suppliers, and booking records (PNRs).",
@@ -286,6 +288,8 @@ document.addEventListener('DOMContentLoaded', () => {
         "faq-i5-a": "يغطي ITOMS الطيف الكامل لعمليات الرحلات الوافدة: إدارة الحجوزات، التحكم في الحصص، إدارة قسم المرور، الحسابات الدائنة والمدينة، التخطيط والتكلفة والتسعير، التقارير الإدارية، وإنشاء كشوفات العملاء.",
         "faq-i6-q": "هل يمكن لـ ITOMS تبادل البيانات مع أنظمة حجز أخرى؟",
         "faq-i6-a": "نعم. تم تطوير ITOMS وفق تنسيقات صناعة السياحة القياسية مما يتيح تبادل المعلومات مع الأنظمة الأخرى، كما يدعم تكاملات Web API المباشرة لمزامنة البيانات في الوقت الفعلي.",
+        "faq-i7-q": "هل يدعم ITOMS الذكاء الاصطناعي؟",
+        "faq-i7-a": "نعم. يدعم ITOMS إمكانات قائمة على الذكاء الاصطناعي تساعد فرق العمل على الاستفادة من البيانات التشغيلية وتحسين التحليلات واتخاذ قرارات أكثر دقة ضمن عمليات إدارة السياحة.",
         // FAQ — Archiving (Arabic)
         "faq-a1-q": "ما هو نظام أرشفة TSE؟",
         "faq-a1-a": "نظام الأرشفة (Travel Filing System) هو حل رقمي لإدارة الوثائق متكامل بالكامل مع ITOMS. يُلغي الحاجة إلى الأرشفة الورقية بإتاحة سحب وإفلات رسائل البريد الإلكتروني ومسح الفاكسات وإرفاق المستندات مباشرة بسجلات الحجز.",
