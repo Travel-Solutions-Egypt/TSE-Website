@@ -5,7 +5,7 @@
 // ---- Active pill on scroll ----
 (function () {
     const pills = document.querySelectorAll('.product-hero-pill');
-    const sections = ['itoms', 'archiving', 'b2b'];
+    const sections = ['itoms', 'archiving', 'b2b', 'accounting-tool'];
 
     function updateActivePill() {
         let current = sections[0];
@@ -86,10 +86,11 @@ document.addEventListener('DOMContentLoaded', () => {
         // Hero
         "products-eyebrow": "Our Software Suite",
         "products-hero-title": "Purpose-Built for Tour Operators",
-        "products-hero-desc": "Three integrated platforms designed from the ground up to handle every complexity of incoming tour operations — from booking to billing to archiving.",
+        "products-hero-desc": "Four integrated platforms designed from the ground up to handle every complexity of incoming tour operations — from booking and finance to digital archiving.",
         "products-pill-itoms": "ITOMS",
         "products-pill-archiving": "Archiving",
         "products-pill-b2b": "B2B Portal",
+        "products-pill-accounting": "Accounting Tool",
 
         // ITOMS
         "itoms-eyebrow": "Flagship Platform",
@@ -166,9 +167,40 @@ document.addEventListener('DOMContentLoaded', () => {
         "b2b-card-3-name": "Nile Cruise 5D",
         "b2b-live-badge": "Live & Real-Time",
 
+        // Accounting Tool
+        "accounting-eyebrow": "Financial Operations",
+        "accounting-title-main": "Accounting Tool",
+        "accounting-subtitle": "Integrated Finance Management for Tour Operators",
+        "accounting-desc": "A dedicated financial operations application that connects ITOMS booking data with accounting workflows. It centralizes supplier invoices, agency payments, cash advances and settlements, expense sheets, exchange rates, approvals, and posting — reducing duplicate entry and keeping finance aligned with operations.",
+        "accounting-feat-1": "ITOMS Data Synchronization",
+        "accounting-feat-1-desc": "Scheduled synchronization brings suppliers, agencies, reservation files, and service details into the accounting workflow.",
+        "accounting-feat-2": "Supplier Invoice Management",
+        "accounting-feat-2-desc": "Create, import, review, and track supplier invoices by voucher, reservation file, or PNR.",
+        "accounting-feat-3": "Payments & Expense Control",
+        "accounting-feat-3-desc": "Manage agency payments, expense sheets, cash advances, settlements, banks, and exchange rates in one place.",
+        "accounting-feat-4": "Approval & Posting Workflow",
+        "accounting-feat-4-desc": "Apply user permissions and structured approval and posting steps for stronger financial control.",
+        "accounting-cta": "Request Accounting Tool Demo",
+        "accounting-visual-label": "Finance Control Center",
+        "accounting-visual-status": "Synced with ITOMS",
+        "accounting-card-1": "Supplier Invoices",
+        "accounting-card-1-sub": "By PNR and voucher",
+        "accounting-card-2": "Agency Payments",
+        "accounting-card-2-sub": "Payments and refunds",
+        "accounting-card-3": "Cash Advances",
+        "accounting-card-3-sub": "Advances and settlements",
+        "accounting-card-4": "Expense Sheets",
+        "accounting-card-4-sub": "Guides and representatives",
+        "accounting-flow-source": "ITOMS Operations",
+        "accounting-flow-target": "Accounting Tool",
+        "accounting-workflow-label": "Controlled financial workflow",
+        "accounting-stage-1": "Import",
+        "accounting-stage-2": "Review",
+        "accounting-stage-3": "Approve & Post",
+
         // Vision
         "vision-eyebrow": "Our Vision",
-        "vision-title": "One Platform. Every Touchpoint.",
+        "vision-title": "One Connected Suite. Every Touchpoint.",
         "vision-desc": "We believe tour operators should spend their time crafting unforgettable experiences — not wrestling with software. TSE's integrated suite eliminates friction at every operational touchpoint, from first booking inquiry to final invoice.",
         "vision-cta": "Start the Conversation",
 
@@ -180,10 +212,11 @@ document.addEventListener('DOMContentLoaded', () => {
         // Hero
         "products-eyebrow": "مجموعة برامجنا",
         "products-hero-title": "مُصمَّمة خصيصاً لمنظمي الرحلات",
-        "products-hero-desc": "ثلاث منصات متكاملة مُطوَّرة من الصفر للتعامل مع كل تعقيدات عمليات السياحة الوافدة — من الحجز إلى الفواتير وحتى الأرشفة.",
+        "products-hero-desc": "أربع منصات متكاملة مُطوَّرة للتعامل مع تعقيدات عمليات السياحة الوافدة — من الحجز والإدارة المالية إلى الأرشفة الرقمية.",
         "products-pill-itoms": "ITOMS",
         "products-pill-archiving": "الأرشفة",
         "products-pill-b2b": "بوابة B2B",
+        "products-pill-accounting": "أداة المحاسبة",
 
         // ITOMS
         "itoms-eyebrow": "المنصة الرئيسية",
@@ -260,9 +293,40 @@ document.addEventListener('DOMContentLoaded', () => {
         "b2b-card-3-name": "رحلة نيل 5 أيام",
         "b2b-live-badge": "مباشر وفوري",
 
+        // Accounting Tool
+        "accounting-eyebrow": "العمليات المالية",
+        "accounting-title-main": "أداة المحاسبة",
+        "accounting-subtitle": "إدارة مالية متكاملة لشركات السياحة",
+        "accounting-desc": "تطبيق متخصص للعمليات المالية يربط بيانات الحجوزات في ITOMS بمسارات العمل المحاسبية. يجمع فواتير الموردين ومدفوعات الوكالات والسلف النقدية وتسوياتها وكشوف المصروفات وأسعار الصرف والموافقات والترحيل في مكان واحد، مما يقلل تكرار إدخال البيانات ويحافظ على توافق الإدارة المالية مع التشغيل.",
+        "accounting-feat-1": "مزامنة البيانات مع ITOMS",
+        "accounting-feat-1-desc": "تنقل المزامنة المجدولة بيانات الموردين والوكالات وملفات الحجز وتفاصيل الخدمات إلى مسار العمل المحاسبي.",
+        "accounting-feat-2": "إدارة فواتير الموردين",
+        "accounting-feat-2-desc": "إنشاء واستيراد ومراجعة وتتبع فواتير الموردين حسب القسيمة أو ملف الحجز أو رقم PNR.",
+        "accounting-feat-3": "إدارة المدفوعات والمصروفات",
+        "accounting-feat-3-desc": "إدارة مدفوعات الوكالات وكشوف المصروفات والسلف النقدية والتسويات والبنوك وأسعار الصرف في مكان واحد.",
+        "accounting-feat-4": "مسار الموافقة والترحيل",
+        "accounting-feat-4-desc": "تطبيق صلاحيات المستخدمين وخطوات منظمة للموافقة والترحيل لتعزيز الرقابة المالية.",
+        "accounting-cta": "اطلب عرضاً توضيحياً لأداة المحاسبة",
+        "accounting-visual-label": "مركز الرقابة المالية",
+        "accounting-visual-status": "متزامن مع ITOMS",
+        "accounting-card-1": "فواتير الموردين",
+        "accounting-card-1-sub": "حسب PNR والقسيمة",
+        "accounting-card-2": "مدفوعات الوكالات",
+        "accounting-card-2-sub": "المدفوعات والاستردادات",
+        "accounting-card-3": "السلف النقدية",
+        "accounting-card-3-sub": "السلف والتسويات",
+        "accounting-card-4": "كشوف المصروفات",
+        "accounting-card-4-sub": "المرشدون والمندوبون",
+        "accounting-flow-source": "عمليات ITOMS",
+        "accounting-flow-target": "أداة المحاسبة",
+        "accounting-workflow-label": "مسار مالي منظم",
+        "accounting-stage-1": "استيراد",
+        "accounting-stage-2": "مراجعة",
+        "accounting-stage-3": "موافقة وترحيل",
+
         // Vision
         "vision-eyebrow": "رؤيتنا",
-        "vision-title": "منصة واحدة. كل نقطة تواصل.",
+        "vision-title": "منظومة مترابطة. لكل نقطة تشغيل.",
         "vision-desc": "نؤمن بأن منظمي الرحلات يجب أن يقضوا وقتهم في صياغة تجارب لا تُنسى — لا في الكفاح مع البرامج. تُزيل مجموعة TSE المتكاملة الاحتكاك عند كل نقطة تشغيلية، من أول استفسار حجز وحتى الفاتورة النهائية.",
         "vision-cta": "ابدأ المحادثة",
 

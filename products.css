@@ -1162,21 +1162,383 @@ html[dir="rtl"] .arch-modal-close {
 }
 
 /* ========================================== */
+/* ACCOUNTING TOOL                            */
+/* ========================================== */
+.accounting-features-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.9rem;
+}
+
+.accounting-feature-card {
+    display: flex;
+    gap: 0.8rem;
+    padding: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: var(--radius-md);
+    background: rgba(255, 255, 255, 0.035);
+}
+
+.accounting-feature-card > i {
+    color: var(--itoms-teal);
+    font-size: 1.1rem;
+    flex-shrink: 0;
+}
+
+.accounting-feature-card h3 {
+    color: #fff;
+    font-size: 0.88rem;
+    font-weight: 700;
+    margin: 0 0 0.25rem;
+}
+
+.accounting-feature-card p {
+    color: rgba(255, 255, 255, 0.48);
+    font-size: 0.75rem;
+    line-height: 1.55;
+    margin: 0;
+}
+
+.accounting-dashboard {
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+    padding: 1.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 24px;
+    background: linear-gradient(145deg, rgba(16, 28, 48, 0.98), rgba(8, 15, 29, 0.98));
+    box-shadow: 0 30px 80px rgba(0, 0, 0, 0.42), inset 0 1px 0 rgba(255, 255, 255, 0.04);
+}
+
+.accounting-dashboard::before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    width: 230px;
+    height: 230px;
+    top: -130px;
+    right: -80px;
+    border-radius: 50%;
+    background: rgba(0, 164, 166, 0.16);
+    filter: blur(45px);
+}
+
+.accounting-dashboard::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    width: 180px;
+    height: 180px;
+    bottom: -120px;
+    left: -70px;
+    border-radius: 50%;
+    background: rgba(211, 30, 36, 0.11);
+    filter: blur(42px);
+}
+
+.accounting-dashboard-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding-bottom: 1.15rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.accounting-dashboard-brand {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.accounting-brand-mark {
+    display: grid;
+    place-items: center;
+    width: 42px;
+    height: 42px;
+    flex-shrink: 0;
+    border: 1px solid rgba(0, 164, 166, 0.28);
+    border-radius: 12px;
+    background: linear-gradient(145deg, rgba(0, 164, 166, 0.2), rgba(0, 164, 166, 0.06));
+    color: #5eead4;
+    box-shadow: 0 8px 24px rgba(0, 164, 166, 0.12);
+}
+
+.accounting-brand-mark svg {
+    width: 22px;
+    height: 22px;
+}
+
+.accounting-dashboard-head strong {
+    display: block;
+    color: #fff;
+    font-size: 1.1rem;
+    letter-spacing: -0.02em;
+}
+
+.accounting-dashboard-kicker {
+    display: block;
+    color: rgba(255, 255, 255, 0.42);
+    font-size: 0.68rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: 0.2rem;
+}
+
+.accounting-sync-status {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    padding: 0.45rem 0.7rem;
+    border: 1px solid rgba(34, 197, 94, 0.12);
+    border-radius: var(--radius-full);
+    background: rgba(34, 197, 94, 0.1);
+    color: #86efac;
+    font-size: 0.7rem;
+    font-weight: 700;
+}
+
+.accounting-status-dot {
+    width: 7px;
+    height: 7px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    background: #4ade80;
+    box-shadow: 0 0 0 4px rgba(74, 222, 128, 0.09), 0 0 12px rgba(74, 222, 128, 0.5);
+}
+
+.accounting-flow {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    gap: 0.65rem;
+    margin: 1rem 0;
+    padding: 0.7rem;
+    border: 1px solid rgba(0, 164, 166, 0.12);
+    border-radius: 16px;
+    background: rgba(0, 164, 166, 0.055);
+}
+
+.accounting-flow-node {
+    display: flex;
+    align-items: center;
+    gap: 0.55rem;
+    min-width: 0;
+    padding: 0.55rem 0.65rem;
+    border-radius: 11px;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.72rem;
+    font-weight: 700;
+}
+
+.accounting-flow-node-target {
+    background: rgba(255, 255, 255, 0.045);
+    color: #fff;
+}
+
+.accounting-flow-icon {
+    display: grid;
+    place-items: center;
+    width: 28px;
+    height: 28px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: rgba(0, 164, 166, 0.1);
+    color: #5eead4;
+}
+
+.accounting-flow-icon svg {
+    width: 16px;
+    height: 16px;
+}
+
+.accounting-flow-connector {
+    display: flex;
+    align-items: center;
+    width: 54px;
+    color: var(--itoms-teal);
+}
+
+.accounting-flow-connector span {
+    width: 14px;
+    height: 1px;
+    background: rgba(0, 164, 166, 0.5);
+}
+
+.accounting-flow-connector svg {
+    width: 26px;
+    height: 18px;
+}
+
+.accounting-dashboard-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.75rem;
+}
+
+.accounting-metric-card {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    min-height: 82px;
+    padding: 0.85rem;
+    border: 1px solid rgba(255, 255, 255, 0.075);
+    border-radius: 14px;
+    background: linear-gradient(145deg, rgba(255, 255, 255, 0.055), rgba(255, 255, 255, 0.025));
+    transition: transform 180ms ease, border-color 180ms ease, background 180ms ease;
+}
+
+.accounting-metric-card:hover {
+    transform: translateY(-2px);
+    border-color: rgba(0, 164, 166, 0.24);
+    background: rgba(255, 255, 255, 0.065);
+}
+
+.accounting-metric-icon {
+    display: grid;
+    place-items: center;
+    width: 38px;
+    height: 38px;
+    flex-shrink: 0;
+    border-radius: 11px;
+    background: rgba(211, 30, 36, 0.12);
+    color: #f87171;
+}
+
+.accounting-metric-icon svg {
+    width: 19px;
+    height: 19px;
+}
+
+.accounting-metric-icon-teal {
+    background: rgba(0, 164, 166, 0.12);
+    color: #5eead4;
+}
+
+.accounting-metric-icon-amber {
+    background: rgba(245, 158, 11, 0.12);
+    color: #fbbf24;
+}
+
+.accounting-metric-icon-violet {
+    background: rgba(139, 92, 246, 0.12);
+    color: #c4b5fd;
+}
+
+.accounting-metric-copy {
+    display: flex;
+    flex: 1;
+    min-width: 0;
+    flex-direction: column;
+    gap: 0.15rem;
+}
+
+.accounting-metric-copy strong {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 0.76rem;
+    line-height: 1.35;
+}
+
+.accounting-metric-copy small {
+    color: rgba(255, 255, 255, 0.35);
+    font-size: 0.64rem;
+    line-height: 1.35;
+}
+
+.accounting-card-arrow {
+    color: rgba(255, 255, 255, 0.22);
+    font-size: 0.85rem;
+    transition: color 180ms ease, transform 180ms ease;
+}
+
+.accounting-metric-card:hover .accounting-card-arrow {
+    color: var(--itoms-teal);
+    transform: translate(2px, -2px);
+}
+
+.accounting-workflow {
+    margin-top: 1rem;
+    padding: 0.9rem 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.065);
+    border-radius: 14px;
+    background: rgba(4, 10, 20, 0.38);
+}
+
+.accounting-workflow-label {
+    display: block;
+    margin-bottom: 0.75rem;
+    color: rgba(255, 255, 255, 0.36);
+    font-size: 0.64rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+
+.accounting-workflow-steps {
+    display: grid;
+    grid-template-columns: auto 1fr auto 1fr auto;
+    align-items: center;
+    gap: 0.55rem;
+}
+
+.accounting-workflow-steps span {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.accounting-workflow-steps b {
+    display: grid;
+    place-items: center;
+    width: 23px;
+    height: 23px;
+    border-radius: 50%;
+    background: rgba(0, 164, 166, 0.12);
+    color: #5eead4;
+    font-size: 0.58rem;
+}
+
+.accounting-workflow-steps em {
+    color: rgba(255, 255, 255, 0.68);
+    font-size: 0.65rem;
+    font-style: normal;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.accounting-workflow-steps i {
+    height: 1px;
+    background: linear-gradient(90deg, rgba(0, 164, 166, 0.35), rgba(0, 164, 166, 0.08));
+}
+
+/* ========================================== */
 /* VISION SECTION                             */
 /* ========================================== */
 .vision-section {
-    padding: 0 0 6rem;
-    background: var(--light-bg);
+    padding: 5rem 0 6rem;
+    background: linear-gradient(180deg, #f4f7fb 0%, var(--light-bg) 100%);
 }
 
 .vision-card {
-    border-radius: var(--radius-xl);
+    border-radius: 28px;
     overflow: hidden;
     position: relative;
     background: linear-gradient(140deg, #060a14 0%, #0a111f 50%, #080d18 100%);
-    padding: 5rem 2rem;
+    padding: 4.5rem 2rem;
     border: 1px solid rgba(255, 255, 255, 0.06);
-    box-shadow: var(--shadow-xl);
+    box-shadow: 0 24px 60px rgba(15, 23, 42, 0.16);
+}
+
+.vision-card::before {
+    content: '';
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 12%;
+    right: 12%;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(0, 164, 166, 0.7), transparent);
 }
 
 .vision-card-bg {
@@ -1184,6 +1546,12 @@ html[dir="rtl"] .arch-modal-close {
     inset: 0;
     pointer-events: none;
     overflow: hidden;
+    background-image:
+        linear-gradient(rgba(255, 255, 255, 0.018) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.018) 1px, transparent 1px);
+    background-size: 42px 42px;
+    -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.65), transparent 85%);
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.65), transparent 85%);
 }
 
 .vision-orb {
@@ -1223,7 +1591,40 @@ html[dir="rtl"] .arch-modal-close {
     font-size: 1rem;
     color: rgba(255, 255, 255, 0.6);
     line-height: 1.8;
+    max-width: 720px;
+    margin: 0 auto 1.75rem;
+}
+
+.vision-suite-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.55rem;
     margin-bottom: 2rem;
+}
+
+.vision-suite-list > span {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+    padding: 0.45rem 0.72rem;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: var(--radius-full);
+    background: rgba(255, 255, 255, 0.035);
+}
+
+.vision-suite-list i {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--itoms-teal);
+    box-shadow: 0 0 9px rgba(0, 164, 166, 0.65);
+}
+
+.vision-suite-list b {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.72rem;
+    font-weight: 600;
 }
 
 .vision-cta {
@@ -1233,8 +1634,17 @@ html[dir="rtl"] .arch-modal-close {
     font-weight: 700;
     color: var(--text-heading);
     border-radius: var(--radius-full);
-    padding: 0.85rem 2rem;
+    padding: 0.75rem 0.85rem 0.75rem 1.5rem;
     transition: all var(--duration-fast) var(--ease-out-expo);
+}
+
+.vision-cta svg {
+    width: 34px;
+    height: 34px;
+    padding: 8px;
+    border-radius: 50%;
+    background: var(--text-heading);
+    color: #fff;
 }
 
 .vision-cta:hover {
@@ -1273,6 +1683,18 @@ html[dir="rtl"] .btn-outline-light-tse svg {
     transform: rotate(180deg);
 }
 
+html[dir="rtl"] .vision-cta {
+    padding: 0.75rem 1.5rem 0.75rem 0.85rem;
+}
+
+html[dir="rtl"] .vision-cta svg {
+    transform: rotate(180deg);
+}
+
+html[dir="rtl"] .vision-cta:hover svg {
+    transform: rotate(180deg) translateX(2px);
+}
+
 html[dir="rtl"] .product-feature-item {
     direction: rtl;
 }
@@ -1283,6 +1705,23 @@ html[dir="rtl"] .archive-benefit {
 
 html[dir="rtl"] .b2b-feature {
     direction: rtl;
+}
+
+.vision-cta:hover svg {
+    transform: translateX(2px);
+}
+
+html[dir="rtl"] .accounting-feature-card,
+html[dir="rtl"] .accounting-dashboard-head {
+    direction: rtl;
+}
+
+html[dir="rtl"] .accounting-dashboard {
+    direction: rtl;
+}
+
+html[dir="rtl"] .accounting-flow-connector svg {
+    transform: rotate(180deg);
 }
 
 /* ========================================== */
@@ -1299,6 +1738,10 @@ html[dir="rtl"] .b2b-feature {
     }
 
     .product-features-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .accounting-features-grid {
         grid-template-columns: 1fr;
     }
 
@@ -1350,8 +1793,61 @@ html[dir="rtl"] .b2b-feature {
         display: none;
     }
 
+    .accounting-dashboard-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .accounting-dashboard {
+        padding: 1rem;
+        border-radius: 18px;
+    }
+
+    .accounting-dashboard-head {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .accounting-flow {
+        grid-template-columns: 1fr;
+    }
+
+    .accounting-flow-connector {
+        justify-content: center;
+        width: 100%;
+        transform: rotate(90deg);
+    }
+
+    html[dir="rtl"] .accounting-flow-connector {
+        transform: rotate(-90deg);
+    }
+
+    .accounting-workflow-steps {
+        grid-template-columns: 1fr;
+    }
+
+    .accounting-workflow-steps i {
+        display: none;
+    }
+
     .vision-title {
         font-size: 1.5rem;
+    }
+
+    .vision-section {
+        padding: 3.5rem 0 4rem;
+    }
+
+    .vision-card {
+        padding: 3.25rem 1.1rem;
+        border-radius: 20px;
+    }
+
+    .vision-suite-list {
+        gap: 0.4rem;
+    }
+
+    .vision-suite-list > span {
+        padding: 0.4rem 0.6rem;
     }
 
     .archive-output-row {

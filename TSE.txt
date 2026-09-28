@@ -85,11 +85,16 @@ We prefer a minimal structure with approximately 4 Landing pages:
    * Our Customers [Wings - Escapade - Gezira - YouGo - CTT - Traveline - Bright Star - Blue Sky]
    * Our Technologies [.NET - Windows Form - MySql - etc..]
 
-2. Products [ITOMS - Archiving - B2B]
+2. Products [ITOMS - Archiving - B2B - Accounting Tool]
 
    * Detailed products overview
    * Key features and benefits
    * Our Vision
+
+   Accounting Tool:
+   * Integrated financial operations for tour operators
+   * Synchronization with ITOMS suppliers, agencies, reservation files, and service details
+   * Supplier invoices, agency payments, expenses, cash advances, settlements, exchange rates, approvals, and posting
 
 3. FAQ
 

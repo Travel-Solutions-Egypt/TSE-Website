@@ -16,6 +16,13 @@ chips.forEach(chip => {
     });
 });
 
+// Preselect a product when visitors arrive from a product demo link.
+const requestedProduct = new URLSearchParams(window.location.search).get('product');
+if (requestedProduct) {
+    const requestedChip = Array.from(chips).find(chip => chip.getAttribute('data-value') === requestedProduct);
+    if (requestedChip) requestedChip.click();
+}
+
 // ---- Client-side form validation & Web3Forms submission ----
 const form = document.getElementById('contact-form');
 const successState = document.getElementById('form-success');
@@ -146,6 +153,11 @@ document.addEventListener('DOMContentLoaded', () => {
             "form-email-label": "Email Address",
             "form-phone-label": "Phone Number",
             "form-interest-label": "Product Interest",
+            "contact-product-itoms": "ITOMS Platform",
+            "contact-product-archiving": "Digital Archiving",
+            "contact-product-b2b": "B2B Portal",
+            "contact-product-accounting": "Accounting Tool",
+            "contact-product-all": "All Products",
             "form-message-label": "Message",
             "form-submit-label": "Send Message",
             "form-success-title": "Message Sent!",
@@ -177,6 +189,11 @@ document.addEventListener('DOMContentLoaded', () => {
             "form-email-label": "البريد الإلكتروني",
             "form-phone-label": "رقم الهاتف",
             "form-interest-label": "المنتج الذي تهتم به",
+            "contact-product-itoms": "منصة ITOMS",
+            "contact-product-archiving": "الأرشفة الرقمية",
+            "contact-product-b2b": "بوابة B2B",
+            "contact-product-accounting": "أداة المحاسبة",
+            "contact-product-all": "جميع المنتجات",
             "form-message-label": "الرسالة",
             "form-submit-label": "إرسال الرسالة",
             "form-success-title": "تم إرسال الرسالة!",
