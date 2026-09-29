@@ -90,7 +90,7 @@ document.addEventListener('DOMContentLoaded', () => {
         "products-pill-itoms": "ITOMS",
         "products-pill-archiving": "Archiving",
         "products-pill-b2b": "B2B Portal",
-        "products-pill-accounting": "Accounting Tool",
+        "products-pill-accounting": "Operational Accounting Tool",
 
         // ITOMS
         "itoms-eyebrow": "Flagship Platform",
@@ -167,9 +167,9 @@ document.addEventListener('DOMContentLoaded', () => {
         "b2b-card-3-name": "Nile Cruise 5D",
         "b2b-live-badge": "Live & Real-Time",
 
-        // Accounting Tool
+        // Operational Accounting Tool
         "accounting-eyebrow": "Financial Operations",
-        "accounting-title-main": "Accounting Tool",
+        "accounting-title-main": "Operational Accounting Tool",
         "accounting-subtitle": "Integrated Finance Management for Tour Operators",
         "accounting-desc": "A dedicated financial operations application that connects ITOMS booking data with accounting workflows. It centralizes supplier invoices, agency payments, cash advances and settlements, expense sheets, exchange rates, approvals, and posting — reducing duplicate entry and keeping finance aligned with operations.",
         "accounting-feat-1": "ITOMS Data Synchronization",
@@ -180,7 +180,7 @@ document.addEventListener('DOMContentLoaded', () => {
         "accounting-feat-3-desc": "Manage agency payments, expense sheets, cash advances, settlements, banks, and exchange rates in one place.",
         "accounting-feat-4": "Approval & Posting Workflow",
         "accounting-feat-4-desc": "Apply user permissions and structured approval and posting steps for stronger financial control.",
-        "accounting-cta": "Request Accounting Tool Demo",
+        "accounting-cta": "Request Operational Accounting Tool Demo",
         "accounting-visual-label": "Finance Control Center",
         "accounting-visual-status": "Synced with ITOMS",
         "accounting-card-1": "Supplier Invoices",
@@ -192,7 +192,7 @@ document.addEventListener('DOMContentLoaded', () => {
         "accounting-card-4": "Expense Sheets",
         "accounting-card-4-sub": "Guides and representatives",
         "accounting-flow-source": "ITOMS Operations",
-        "accounting-flow-target": "Accounting Tool",
+        "accounting-flow-target": "Operational Accounting Tool",
         "accounting-workflow-label": "Controlled financial workflow",
         "accounting-stage-1": "Import",
         "accounting-stage-2": "Review",
@@ -216,7 +216,7 @@ document.addEventListener('DOMContentLoaded', () => {
         "products-pill-itoms": "ITOMS",
         "products-pill-archiving": "الأرشفة",
         "products-pill-b2b": "بوابة B2B",
-        "products-pill-accounting": "أداة المحاسبة",
+        "products-pill-accounting": "أداة المحاسبة التشغيلية",
 
         // ITOMS
         "itoms-eyebrow": "المنصة الرئيسية",
@@ -293,9 +293,9 @@ document.addEventListener('DOMContentLoaded', () => {
         "b2b-card-3-name": "رحلة نيل 5 أيام",
         "b2b-live-badge": "مباشر وفوري",
 
-        // Accounting Tool
+        // Operational Accounting Tool
         "accounting-eyebrow": "العمليات المالية",
-        "accounting-title-main": "أداة المحاسبة",
+        "accounting-title-main": "أداة المحاسبة التشغيلية",
         "accounting-subtitle": "إدارة مالية متكاملة لشركات السياحة",
         "accounting-desc": "تطبيق متخصص للعمليات المالية يربط بيانات الحجوزات في ITOMS بمسارات العمل المحاسبية. يجمع فواتير الموردين ومدفوعات الوكالات والسلف النقدية وتسوياتها وكشوف المصروفات وأسعار الصرف والموافقات والترحيل في مكان واحد، مما يقلل تكرار إدخال البيانات ويحافظ على توافق الإدارة المالية مع التشغيل.",
         "accounting-feat-1": "مزامنة البيانات مع ITOMS",
@@ -306,7 +306,7 @@ document.addEventListener('DOMContentLoaded', () => {
         "accounting-feat-3-desc": "إدارة مدفوعات الوكالات وكشوف المصروفات والسلف النقدية والتسويات والبنوك وأسعار الصرف في مكان واحد.",
         "accounting-feat-4": "مسار الموافقة والترحيل",
         "accounting-feat-4-desc": "تطبيق صلاحيات المستخدمين وخطوات منظمة للموافقة والترحيل لتعزيز الرقابة المالية.",
-        "accounting-cta": "اطلب عرضاً توضيحياً لأداة المحاسبة",
+        "accounting-cta": "اطلب عرضاً توضيحياً لأداة المحاسبة التشغيلية",
         "accounting-visual-label": "مركز الرقابة المالية",
         "accounting-visual-status": "متزامن مع ITOMS",
         "accounting-card-1": "فواتير الموردين",
@@ -318,7 +318,7 @@ document.addEventListener('DOMContentLoaded', () => {
         "accounting-card-4": "كشوف المصروفات",
         "accounting-card-4-sub": "المرشدون والمندوبون",
         "accounting-flow-source": "عمليات ITOMS",
-        "accounting-flow-target": "أداة المحاسبة",
+        "accounting-flow-target": "أداة المحاسبة التشغيلية",
         "accounting-workflow-label": "مسار مالي منظم",
         "accounting-stage-1": "استيراد",
         "accounting-stage-2": "مراجعة",
