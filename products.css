@@ -936,232 +936,6 @@ html[dir="rtl"] .arch-modal-close {
 }
 
 /* ========================================== */
-/* B2B — FEATURE LIST                         */
-/* ========================================== */
-.b2b-features-list {
-    display: flex;
-    flex-direction: column;
-    gap: 1.1rem;
-}
-
-.b2b-feature {
-    display: flex;
-    gap: 1rem;
-    align-items: flex-start;
-}
-
-.b2b-feature-dot {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    flex-shrink: 0;
-    margin-top: 0.35rem;
-}
-
-.b2b-dot-teal {
-    background: var(--itoms-teal);
-    box-shadow: 0 0 8px rgba(0, 164, 166, 0.5);
-}
-
-.b2b-dot-red {
-    background: var(--brand-red);
-    box-shadow: 0 0 8px rgba(211, 30, 36, 0.4);
-}
-
-.b2b-feature-title {
-    font-size: 0.9rem;
-    font-weight: 700;
-    color: var(--text-heading);
-    margin-bottom: 0.2rem;
-}
-
-.b2b-feature-desc {
-    font-size: 0.82rem;
-    color: var(--text-muted);
-    line-height: 1.5;
-}
-
-/* ========================================== */
-/* B2B — INTERFACE MOCKUP                     */
-/* ========================================== */
-.b2b-visual-block {
-    position: relative;
-}
-
-.b2b-interface-mockup {
-    background: var(--light-card);
-    border: 1px solid var(--light-border);
-    border-radius: var(--radius-xl);
-    overflow: hidden;
-    box-shadow: var(--shadow-xl);
-}
-
-.b2b-mock-topbar {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    padding: 0.75rem 1rem;
-    background: var(--light-bg);
-    border-bottom: 1px solid var(--light-border);
-}
-
-.b2b-mock-dot {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background: var(--light-border);
-}
-
-.b2b-mock-dot-green {
-    background: #22c55e;
-}
-
-.b2b-mock-url {
-    flex: 1;
-    font-size: 0.72rem;
-    font-weight: 600;
-    color: var(--text-muted);
-    text-align: center;
-}
-
-.b2b-mock-body {
-    padding: 1.25rem;
-}
-
-.b2b-mock-search {
-    display: flex;
-    gap: 0.5rem;
-    margin-bottom: 1.25rem;
-    align-items: center;
-}
-
-.b2b-mock-search-bar {
-    flex: 1;
-    display: flex;
-    align-items: center;
-    gap: 0.6rem;
-    padding: 0.6rem 0.9rem;
-    border: 1px solid var(--light-border);
-    border-radius: var(--radius-md);
-    background: var(--light-bg);
-    font-size: 0.78rem;
-    color: var(--text-muted);
-}
-
-.b2b-mock-search-bar svg {
-    width: 14px;
-    height: 14px;
-    flex-shrink: 0;
-    color: var(--text-muted);
-}
-
-.b2b-mock-search-btn {
-    padding: 0.6rem 1.1rem;
-    border-radius: var(--radius-md);
-    background: var(--brand-red);
-    color: #fff;
-    font-size: 0.78rem;
-    font-weight: 700;
-    flex-shrink: 0;
-}
-
-.b2b-mock-cards {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 0.75rem;
-}
-
-.b2b-mock-card {
-    border: 1px solid var(--light-border);
-    border-radius: var(--radius-md);
-    overflow: hidden;
-    transition: transform var(--duration-fast) ease, box-shadow var(--duration-fast) ease;
-}
-
-.b2b-mock-card:hover {
-    transform: translateY(-2px);
-    box-shadow: var(--shadow-md);
-}
-
-.b2b-card-image {
-    height: 65px;
-    background: linear-gradient(135deg, rgba(0, 164, 166, 0.15) 0%, rgba(0, 164, 166, 0.05) 100%);
-    position: relative;
-    display: flex;
-    align-items: flex-start;
-    padding: 0.4rem;
-}
-
-.b2b-card-image-2 {
-    background: linear-gradient(135deg, rgba(211, 30, 36, 0.12) 0%, rgba(211, 30, 36, 0.04) 100%);
-}
-
-.b2b-card-image-3 {
-    background: linear-gradient(135deg, rgba(0, 164, 166, 0.08) 0%, rgba(211, 30, 36, 0.08) 100%);
-}
-
-.b2b-card-tag {
-    padding: 0.15rem 0.5rem;
-    border-radius: var(--radius-full);
-    background: var(--itoms-teal);
-    color: #fff;
-    font-size: 0.6rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-}
-
-.b2b-card-tag-red {
-    background: var(--brand-red);
-}
-
-.b2b-card-info {
-    padding: 0.5rem 0.6rem;
-}
-
-.b2b-card-name {
-    font-size: 0.72rem;
-    font-weight: 700;
-    color: var(--text-heading);
-    margin-bottom: 0.2rem;
-}
-
-.b2b-card-price {
-    font-size: 0.68rem;
-    color: var(--text-muted);
-}
-
-.b2b-card-price strong {
-    color: var(--brand-red);
-    font-weight: 700;
-}
-
-.b2b-visual-badge {
-    position: absolute;
-    bottom: -12px;
-    right: 1.5rem;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    background: white;
-    border: 1px solid var(--light-border);
-    border-radius: var(--radius-full);
-    padding: 0.5rem 1rem;
-    font-size: 0.78rem;
-    font-weight: 600;
-    color: var(--text-heading);
-    box-shadow: var(--shadow-md);
-}
-
-.b2b-badge-dot {
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    background: #22c55e;
-    animation: pulse-dot 2s ease-in-out infinite;
-}
-
-/* ========================================== */
 /* OPERATIONAL ACCOUNTING TOOL                */
 /* ========================================== */
 .accounting-features-grid {
@@ -2558,10 +2332,6 @@ html[dir="rtl"] .archive-benefit {
     direction: rtl;
 }
 
-html[dir="rtl"] .b2b-feature {
-    direction: rtl;
-}
-
 .vision-cta:hover svg {
     transform: translateX(2px);
 }
@@ -2607,11 +2377,6 @@ html[dir="rtl"] .accounting-flow-connector svg {
     .cap-card-full {
         grid-column: span 3;
     }
-
-    .b2b-mock-cards {
-        grid-template-columns: repeat(3, 1fr);
-    }
-
     .vision-card {
         padding: 3.5rem 1.5rem;
     }
@@ -2639,15 +2404,6 @@ html[dir="rtl"] .accounting-flow-connector svg {
     .cap-card-full {
         grid-column: span 2;
     }
-
-    .b2b-mock-cards {
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .b2b-mock-cards .b2b-mock-card:last-child {
-        display: none;
-    }
-
     .accounting-dashboard-grid {
         grid-template-columns: 1fr;
     }

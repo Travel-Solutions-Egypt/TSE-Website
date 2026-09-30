@@ -56,11 +56,6 @@ There are two ways to display the saved document:
 Directly from the PNR or the agencies and suppliers screen by clicking on the attachment TAB.
 Using the web based search screen from the net.
 
-##B2B
-The B2B System is a web-based application designed to simplify and automate the booking
- and reservation process for travel and tourism services across Egypt. The platform enables customers to search,
- book, and manage travel packages, hotel accommodations, transportation services,
- and tourism activities through a single, user-friendly interface.
 ### 2. Core Requirement (Very Important)
 
 The website must be:
@@ -85,7 +80,7 @@ We prefer a minimal structure with approximately 4 Landing pages:
    * Our Customers [Wings - Escapade - Gezira - YouGo - CTT - Traveline - Bright Star - Blue Sky]
    * Our Technologies [.NET - Windows Form - MySql - etc..]
 
-2. Products [ITOMS - Archiving - B2B - Operational Accounting Tool - ITOMS Today]
+2. Products [ITOMS - Operational Accounting Tool - ITOMS Today - Archiving System]
 
    * Detailed products overview
    * Key features and benefits

@@ -5,7 +5,7 @@
 // ---- Active pill on scroll ----
 (function () {
     const pills = document.querySelectorAll('.product-hero-pill');
-    const sections = ['itoms', 'archiving', 'b2b', 'accounting-tool', 'itoms-today'];
+    const sections = ['itoms', 'accounting-tool', 'itoms-today', 'archiving'];
 
     function updateActivePill() {
         let current = sections[0];
@@ -86,10 +86,9 @@ document.addEventListener('DOMContentLoaded', () => {
         // Hero
         "products-eyebrow": "Our Software Suite",
         "products-hero-title": "Purpose-Built for Tour Operators",
-        "products-hero-desc": "Five integrated platforms designed from the ground up to handle every complexity of incoming tour operations — from booking and finance to digital archiving and executive insight.",
+        "products-hero-desc": "Four integrated platforms designed from the ground up to handle every complexity of incoming tour operations — from booking and finance to digital archiving and executive insight.",
         "products-pill-itoms": "ITOMS",
         "products-pill-archiving": "Archiving",
-        "products-pill-b2b": "B2B Portal",
         "products-pill-accounting": "Operational Accounting Tool",
         "products-pill-today": "ITOMS Today",
 
@@ -142,31 +141,6 @@ document.addEventListener('DOMContentLoaded', () => {
         "arch-benefit-4-title": "Custom Categories",
         "arch-benefit-4-desc": "Add your own filing categories beyond standard ones — fully customizable search and sort.",
         "archiving-cta": "Learn More About Archiving",
-
-        // B2B
-        "b2b-eyebrow": "Web Platform",
-        "b2b-title-main": "B2B Portal",
-        "b2b-subtitle": "Online Booking & Reservation Platform",
-        "b2b-desc": "A web-based application designed to simplify and automate the booking and reservation process for travel and tourism services across Egypt. The platform enables customers to search, book, and manage travel packages, hotel accommodations, transportation services, and tourism activities through a single, user-friendly interface.",
-        "b2b-feat-1": "Travel Package Search & Booking",
-        "b2b-feat-1-desc": "Full-featured search engine for packages, hotels, and transport across Egypt.",
-        "b2b-feat-2": "Hotel Accommodation Management",
-        "b2b-feat-2-desc": "Real-time availability and confirmation for hotel bookings integrated with ITOMS allotments.",
-        "b2b-feat-3": "Transportation Services",
-        "b2b-feat-3-desc": "Book transfers, private vehicles, and Nile Cruises through one unified interface.",
-        "b2b-feat-4": "Tourism Activities & Excursions",
-        "b2b-feat-4-desc": "Manage optional excursions and activity bookings directly within the platform.",
-        "b2b-cta": "Request B2B Demo",
-        "b2b-mock-url": "b2b.tsegypt.com",
-        "b2b-mock-search-ph": "Search packages, hotels, tours…",
-        "b2b-mock-search-btn": "Search",
-        "b2b-card-1-tag": "Hotel",
-        "b2b-card-1-name": "Cairo Nile View",
-        "b2b-card-2-tag": "Tour",
-        "b2b-card-2-name": "Luxor Day Trip",
-        "b2b-card-3-tag": "Cruise",
-        "b2b-card-3-name": "Nile Cruise 5D",
-        "b2b-live-badge": "Live & Real-Time",
 
         // Operational Accounting Tool
         "accounting-eyebrow": "Financial Operations",
@@ -273,10 +247,9 @@ document.addEventListener('DOMContentLoaded', () => {
         // Hero
         "products-eyebrow": "مجموعة برامجنا",
         "products-hero-title": "مُصمَّمة خصيصاً لمنظمي الرحلات",
-        "products-hero-desc": "خمس منصات متكاملة مُطوَّرة للتعامل مع تعقيدات عمليات السياحة الوافدة — من الحجز والإدارة المالية إلى الأرشفة الرقمية والرؤية التنفيذية.",
+        "products-hero-desc": "أربع منصات متكاملة مُطوَّرة للتعامل مع تعقيدات عمليات السياحة الوافدة — من الحجز والإدارة المالية إلى الأرشفة الرقمية والرؤية التنفيذية.",
         "products-pill-itoms": "ITOMS",
         "products-pill-archiving": "الأرشفة",
-        "products-pill-b2b": "بوابة B2B",
         "products-pill-accounting": "أداة المحاسبة التشغيلية",
         "products-pill-today": "ITOMS Today",
 
@@ -329,31 +302,6 @@ document.addEventListener('DOMContentLoaded', () => {
         "arch-benefit-4-title": "فئات مخصصة",
         "arch-benefit-4-desc": "أضف فئات حفظ خاصة بك تتجاوز الفئات القياسية — بحث وترتيب مرنان بالكامل.",
         "archiving-cta": "اعرف المزيد عن الأرشفة",
-
-        // B2B
-        "b2b-eyebrow": "منصة الويب",
-        "b2b-title-main": "بوابة B2B",
-        "b2b-subtitle": "منصة الحجز والحجوزات الإلكترونية",
-        "b2b-desc": "تطبيق ويب مصمم لتبسيط وأتمتة عملية الحجز للخدمات السياحية عبر مصر. تُتيح المنصة للعملاء البحث وحجز وإدارة باقات السفر والإقامة الفندقية وخدمات المواصلات والأنشطة السياحية من خلال واجهة واحدة سهلة الاستخدام.",
-        "b2b-feat-1": "البحث وحجز الباقات السياحية",
-        "b2b-feat-1-desc": "محرك بحث متكامل للباقات والفنادق والمواصلات في أنحاء مصر.",
-        "b2b-feat-2": "إدارة الإقامة الفندقية",
-        "b2b-feat-2-desc": "توافر وتأكيد فوري لحجوزات الفنادق متكامل مع حصص ITOMS.",
-        "b2b-feat-3": "خدمات المواصلات",
-        "b2b-feat-3-desc": "احجز التنقلات والسيارات الخاصة ورحلات النيل عبر واجهة موحدة.",
-        "b2b-feat-4": "الأنشطة والرحلات الاختيارية",
-        "b2b-feat-4-desc": "إدارة الرحلات الاختيارية وحجوزات الأنشطة مباشرة ضمن المنصة.",
-        "b2b-cta": "طلب عرض توضيحي لـ B2B",
-        "b2b-mock-url": "b2b.tsegypt.com",
-        "b2b-mock-search-ph": "ابحث عن باقات، فنادق، جولات...",
-        "b2b-mock-search-btn": "بحث",
-        "b2b-card-1-tag": "فندق",
-        "b2b-card-1-name": "القاهرة نيل فيو",
-        "b2b-card-2-tag": "جولة",
-        "b2b-card-2-name": "رحلة الأقصر",
-        "b2b-card-3-tag": "كروز",
-        "b2b-card-3-name": "رحلة نيل 5 أيام",
-        "b2b-live-badge": "مباشر وفوري",
 
         // Operational Accounting Tool
         "accounting-eyebrow": "العمليات المالية",
