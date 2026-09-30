@@ -18,8 +18,8 @@ chips.forEach(chip => {
 
 // Preselect a product when visitors arrive from a product demo link.
 const requestedProductValue = new URLSearchParams(window.location.search).get('product');
-const requestedProduct = requestedProductValue === 'AccountingTool'
-    ? 'Operational Accounting Tool'
+const requestedProduct = ['AccountingTool', 'Operational Accounting Tool'].includes(requestedProductValue)
+    ? 'Operational Accounting'
     : requestedProductValue;
 if (requestedProduct) {
     const requestedChip = Array.from(chips).find(chip => chip.getAttribute('data-value') === requestedProduct);
@@ -158,7 +158,7 @@ document.addEventListener('DOMContentLoaded', () => {
             "form-interest-label": "Product Interest",
             "contact-product-itoms": "ITOMS Platform",
             "contact-product-archiving": "Digital Archiving",
-            "contact-product-accounting": "Operational Accounting Tool",
+            "contact-product-accounting": "Operational Accounting",
             "contact-product-today": "ITOMS Today",
             "contact-product-all": "All Products",
             "form-message-label": "Message",
@@ -194,7 +194,7 @@ document.addEventListener('DOMContentLoaded', () => {
             "form-interest-label": "المنتج الذي تهتم به",
             "contact-product-itoms": "منصة ITOMS",
             "contact-product-archiving": "الأرشفة الرقمية",
-            "contact-product-accounting": "أداة المحاسبة التشغيلية",
+            "contact-product-accounting": "المحاسبة التشغيلية",
             "contact-product-today": "ITOMS Today",
             "contact-product-all": "جميع المنتجات",
             "form-message-label": "الرسالة",
