@@ -88,6 +88,7 @@ const translations = {
         "footer-Archiving-System": "Archiving System",
         "footer-B2B-Portal": "B2B Portal",
         "footer-Accounting-Tool": "Operational Accounting Tool",
+        "footer-ITOMS-Today": "ITOMS Today",
         "footer-company": "Company",
         "footer-contact": "Contact",
         "footer-address": "Cairo, Egypt"
@@ -180,6 +181,7 @@ const translations = {
         "footer-Archiving-System": "نظام الأرشفة",
         "footer-B2B-Portal": "بوابة B2B",
         "footer-Accounting-Tool": "أداة المحاسبة التشغيلية",
+        "footer-ITOMS-Today": "ITOMS Today",
         "footer-cloud": "حلول سحابية",
         "footer-company": "الشركة",
         "footer-contact": "تواصل معنا",
